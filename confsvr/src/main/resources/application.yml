@@ -9,5 +9,5 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///home/dg/project/confsvr/src/main/resources/config/licensingservice
+          search-locations: file:///home/dg/project/confsvr/src/main/resources/config/history-service
 

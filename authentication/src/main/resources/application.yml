@@ -14,4 +14,4 @@ spring:
     name: authenticationservice
   profiles:
     active:
-      default
+      dev

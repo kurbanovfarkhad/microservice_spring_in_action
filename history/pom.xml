@@ -11,7 +11,7 @@
     <groupId>com.microservices.tutorial</groupId>
     <artifactId>history</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>microservices</name>
+    <name>history</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
@@ -59,6 +59,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>

@@ -2,7 +2,11 @@ spring:
   application:
     name: history-service
   profiles:
-    active: default
+    active: dev
   cloud:
     config:
       uri: http://localhost:5555
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8888/auth/user
