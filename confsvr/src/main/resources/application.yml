@@ -1,0 +1,13 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///home/dg/project/confsvr/src/main/resources/config/licensingservice
+
