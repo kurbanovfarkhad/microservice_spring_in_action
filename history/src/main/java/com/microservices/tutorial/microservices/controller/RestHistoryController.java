@@ -7,6 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.support.HttpRequestHandlerServlet;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("history")
@@ -21,8 +24,9 @@ public class RestHistoryController {
     }
 
     @GetMapping
-    public ResponseEntity getHistory() {
-        System.out.println(config.getTest());
+    public ResponseEntity getHistory(HttpServletRequest req) {
+        System.out.println(config.getJwtSigningKey());
+//        return calendarServiceProxy.getCalendarModel(req.getHeader("Authorization"));
         return calendarServiceProxy.getCalendarModel();
     }
 }

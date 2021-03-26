@@ -1,4 +1,4 @@
-package com.microservices.tutorial.microservices.config;
+package com.microservices.tutoriial.microservices.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceConfig {
     @Value("${signing.key}")
-    private String jwtSigningKey="";
+    private String jwtSigningKey;
 
 
     public String getJwtSigningKey() {
