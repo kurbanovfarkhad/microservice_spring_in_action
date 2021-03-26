@@ -1,4 +1,4 @@
-package com.microservices.tutorial.authentication.config;
+package com.microservices.tutorial.authentication.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

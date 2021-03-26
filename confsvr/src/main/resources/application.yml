@@ -9,5 +9,7 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///home/dg/project/confsvr/src/main/resources/config/history-service
+          search-locations: file:///home/dg/project/confsvr/src/main/resources/config/history-service,
+                            file:///home/dg/project/confsvr/src/main/resources/config/authenticationservice,
+                            file:///home/dg/project/confsvr/src/main/resources/config/calendar-service
 

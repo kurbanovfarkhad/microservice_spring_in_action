@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /auth
+  port: 8888
+spring:
+  application:
+    name: authenticationservice
+  profiles:
+    active:
+      dev
+  cloud:
+    config:
+      uri: http://localhost:5555
